@@ -1,17 +1,34 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fffaf3;
+    color: #333;
+}
 
 
 .contenedor1{
     background-color: rgb(255, 255, 255);
-    padding: 10px 0px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px 40px;
 }
 
-.nombreArriba{
-    margin-left: 50px;
-    color: rgb(255, 123, 0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.nombreArriba h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.1rem;
+    color: #F57C00;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
+
+.nombreArriba h2::after {
+    content: ' 🚀';
+}
+
+
 
 .inicio{
     padding: 70px 0;
@@ -28,16 +45,42 @@
 
 }
 
-a {
-    color:rgb(255, 129, 26);
-    padding: 0px 10px;
-    
+ a {
+    position: relative;
+    color: rgb(255, 129, 26);
+    padding: 8px 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
+
+ a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: rgb(255, 129, 26);
+    transition: width 0.3s ease;
+}
+
+ a:hover {
+    color: rgb(230, 81, 0);
+    transform: translateY(-2px);
+}
+
+ a:hover::after {
+    width: 100%;
+}
+
 
 .contenido-inicio{
     margin-left: 20px;
-    padding: 10px;
+    padding: 40px;
     font-size: 20px;
+    max-width: 600px;
+    margin: auto;
 }
 
 #soyyo{
@@ -70,7 +113,10 @@ a {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
 }
 
 #contenedorImagen{
@@ -79,7 +125,10 @@ a {
     background-color:orange;
     border-radius: 50%;
     position: relative;
-    margin: 25px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contenedor2{
@@ -90,34 +139,16 @@ a {
 }
 
 
-.enlace-animado {
-  position: relative;
-  display: inline-block;
-  color: #F57C00; /* color del texto */
-  text-decoration: none;
-}
-
-.enlace-animado::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background-color: #F57C00;
-  transition: width 0.3s ease;
-}
-
-.enlace-animado:hover::after {
-  width: 100%;
-}
-
 /* Parte de proyectos */
+#proyectos{
+    background-color: antiquewhite;
+}
 
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    background-color: antiquewhite;
 }
 
 .titulo-seccion {
