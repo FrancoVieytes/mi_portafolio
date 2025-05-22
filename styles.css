@@ -45,7 +45,7 @@ body {
 
 }
 
- a {
+ .enlace-animado1  {
     position: relative;
     color: rgb(255, 129, 26);
     padding: 8px 10px;
@@ -54,7 +54,7 @@ body {
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
- a::after {
+ .enlace-animado1::after {
     content: '';
     position: absolute;
     left: 0;
@@ -65,12 +65,12 @@ body {
     transition: width 0.3s ease;
 }
 
- a:hover {
+ .enlace-animado1:hover {
     color: rgb(230, 81, 0);
     transform: translateY(-2px);
 }
 
- a:hover::after {
+ .enlace-animado1:hover::after {
     width: 100%;
 }
 
@@ -109,8 +109,8 @@ body {
 }
 
 #imagenMia{
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     object-fit: cover;
     display: flex;
@@ -120,8 +120,8 @@ body {
 }
 
 #contenedorImagen{
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     background-color:orange;
     border-radius: 50%;
     position: relative;
@@ -281,3 +281,15 @@ body {
 .btn-principal:hover {
     background-color: #E65100;
 }
+
+@media (max-width: 600px) {
+ body { 
+	background-color:antiquewhite; 
+	} 
+}
+
+@media (max-width: 1200px) {
+ body { 
+	background-color:antiquewhite; 
+	} 
+} 
