@@ -1,0 +1,252 @@
+
+
+.contenedor1{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.nombreArriba{
+    margin-left: 50px;
+    color: rgb(255, 123, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inicio{
+    padding: 70px 0;
+    background-color: antiquewhite;
+}
+
+.navegacion{
+    text-align: right;
+    margin-right: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+
+
+}
+
+a {
+    color:rgb(255, 129, 26);
+    padding: 0px 10px;
+    
+}
+
+.contenido-inicio{
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#soyyo{
+    color: rgb(255, 122, 27);
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#quesoy{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#descripcion{
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.pie-pagina{
+    background-color: rgb(255, 149, 35);
+    padding: 20px;
+    text-align: center;
+}
+#descripcion2{
+    font-size: 20px;
+    margin: 10px;
+}
+
+#imagenMia{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+#contenedorImagen{
+    width: 250px;
+    height: 250px;
+    background-color:orange;
+    border-radius: 50%;
+    position: relative;
+    margin: 25px;
+}
+
+#contenedor2{
+    background-color: antiquewhite;
+    padding: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.enlace-animado {
+  position: relative;
+  display: inline-block;
+  color: #F57C00; /* color del texto */
+  text-decoration: none;
+}
+
+.enlace-animado::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #F57C00;
+  transition: width 0.3s ease;
+}
+
+.enlace-animado:hover::after {
+  width: 100%;
+}
+
+/* Parte de proyectos */
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta-proyecto {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjeta-proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.botones-proyecto {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-proyecto {
+    background-color: #F57C00;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-proyecto:hover {
+    background-color: #E65100;
+}
+
+/* parte contactos */
+
+.seccion-contacto {
+    background-color: #f9f9f9;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.info-contacto {
+    flex: 1;
+    min-width: 250px;
+    font-size: 20px;
+}
+
+.info-contacto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #F57C00;
+}
+
+.info-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-contacto li {
+    margin-bottom: 10px;
+}
+
+.formulario-contacto {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn-principal {
+    background-color: #F57C00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: #E65100;
+}
